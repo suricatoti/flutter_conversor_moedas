@@ -122,9 +122,9 @@ class _HomeState extends State<Home> {
 Widget buildTextField(String label, String prefix, TextEditingController controller, Function f) {
   return TextField(
     decoration: InputDecoration(
-        labelText: "label",
+        labelText: label,
         labelStyle: TextStyle(color: Colors.amber),
-        prefixText: "prefix"
+        prefixText: prefix
     ),
     controller: controller,
     onChanged: f,
